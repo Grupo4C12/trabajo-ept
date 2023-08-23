@@ -6,9 +6,17 @@
 <style>
 
 </style>
-<!-- Sistema para que no haga Zoom pero para que si puedan bajar -->
-<script> // JavaScript para permitir el desplazamiento vertical en dispositivos móviles window.onload = function() { // Obtener el alto de la ventana var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; // Establecer la altura mínima del contenedor para permitir el desplazamiento vertical document.querySelector('.container').style.minHeight = windowHeight + 'px'; }; </script>
-<!-- Final de sistema de Zoom -->
+<script> 
+
+        // Desactivar el zoom en dispositivos móviles 
+
+        document.addEventListener('touchmove', function (event) { 
+
+            event.preventDefault(); 
+
+        }, { passive: false }); 
+
+    </script> 
 <title>Login - Tienda de Agua</title>
 </head>
 <body>
