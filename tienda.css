@@ -180,11 +180,3 @@ nav a:active {
 text-shadow: 0 0 10px rgba(3, 233, 244, 0.6);
 
 }
-  a.login-link {
-    text-decoration: none;
-  }
-
-  /* Cambia el cursor a "pointer" para indicar que es un enlace */
-  .login-btn-as-link {
-    cursor: pointer;
-  }
