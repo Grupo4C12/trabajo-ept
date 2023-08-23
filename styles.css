@@ -77,3 +77,11 @@ body {
   .create-account a:hover {
     text-decoration: underline;
   }
+  a.login-link {
+    text-decoration: none;
+  }
+
+  /* Cambia el cursor a "pointer" para indicar que es un enlace */
+  .login-btn-as-link {
+    cursor: pointer;
+  }
