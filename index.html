@@ -25,11 +25,23 @@
         <input type="password" id="password" name="password" required>
       </div>
       <div class="create-account">
-        ¿No tienes una cuenta? <a href="#">Crear cuenta</a>
+        ¿No tienes una cuenta? <a href="https://support.google.com/accounts/answer/27441?hl=es-419">Crear cuenta</a>
       </div>
       <br>
       <br>
-     <button type="submit" class="login-btn" formaction="tienda.html">Iniciar Sesión</button>
+    <button type="submit" class="login-btn">Iniciar Sesión</button>
+       <script>
+    const loginForm = document.getElementById('login-form');
+
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();  // Evita el envío del formulario normal
+
+      // Simulación de redirección después de 2 segundos
+      setTimeout(function() {
+        window.location.href = 'tienda.html';  // Cambia esto a la página de destino
+      }, 2000); // 2000 milisegundos = 2 segundos
+    });
+  </script>
       
     </form>
   </div>
